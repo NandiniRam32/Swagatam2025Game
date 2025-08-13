@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code for Swagatam Game</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    #qrcode {
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Scan to Open the Swagatam Game</h1>
+  <div id="qrcode"></div>
+  <p>Or visit: <a href="https://nandiniram32.github.io/Swagatam2025Game/" target="_blank">nandiniram32.github.io/Swagatam2025Game</a></p>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    new QRCode(document.getElementById("qrcode"), {
+      text: "https://nandiniram32.github.io/Swagatam2025Game/",
+      width: 400,
+      height: 400
+    });
+  </script>
+
+</body>
+</html>
