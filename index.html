@@ -54,31 +54,41 @@
       "#47e3f5",
       "#e147f5",
       "#47f592",
+      "#f547d2",
+      "#47e3f5",
+      "#e147f5",
+      "#47f592",
       "#f547d2"
     ];
 
     const prompts = [
       "Has celebrated Diwali in India:",
       'Can say "hello" in 3 different Indian languages:',
-      "Has danced garba or dandiya before.",
-      "Has lit a diya during a festival.",
-      "Can name 10 Indian states.",
-      "Can name 10 characters from the Mahabharata.",
-      "Can name 10 characters from the Ramayana.",
-      "Can name 5 Hindu deities.",
-      "Has tried masala chai.",
-      "Can name 5 Indian sweets.",
-      "Has learned an Indian classical dance form for at least 8 years.",
-      "Has learned Indian classical music/instrument for at least 8 years.",
-      "Has played kho kho before.",
-      "Can name 10 different Indian languages.",
-      "Can name 6 different Indian cricket players.",
-      "Has cooked an Indian dish themselves."
+      "Has danced garba or dandiya before:",
+      "Has lit a diya during a festival:",
+      "Can name 10 different Indian states:",
+      "Can name 10 different characters from the Mahabharata:",
+      "Can name 10 different characters from the Ramayana:",
+      "Can name 5 different Hindu deities:",
+      "Has tried masala chai before:",
+      "Can name 5 different Indian sweets:",
+      "Has learned an Indian classical dance form for at least 8 years:",
+      "Has learned Indian classical music/instrument for at least 8 years:",
+      "Has played kho kho before:",
+      "Can name 10 different Indian languages:",
+      "Can name 6 different Indian cricket players:",
+      "Has cooked an Indian dish themselves:",
+      "Has celebrated Holi with dry colors only:",
+      "Can name all 10 avatars of Vishnu in order:",
+      "Loves kaju katli:",
+      "Has fasted for a Hindu festival:",
+      "Has celebrated Makar Sankranti by flying a kite:",
+      "Knows the full Indian national anthem:"
     ];
 
     const selectedPrompts = prompts
       .sort(() => 0.5 - Math.random())
-      .slice(0, 8);
+      .slice(0, 12);
 
     const container = document.getElementById("blocks-container");
 
